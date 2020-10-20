@@ -125,7 +125,7 @@ app.post("logout",async(request,response)=>{
 
 const challenges = require('./challenges.json');
 const { INTEGER } = require("sequelize");
-
+/*
 app.post("/api/get-challenges", async(request,response)=>{
     try {
         var user = await UserModel.findOne({ email: request.signedCookies['username'] }).exec();
@@ -146,6 +146,7 @@ app.post("/api/get-challenges", async(request,response)=>{
         response.status(501).json({error:'internal server error'});
     }
 });
+*/
 app.post("/leaderboard", async(request,response)=>{
     //  if()
     var user=Mongoose.model('user');
