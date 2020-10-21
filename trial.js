@@ -123,8 +123,9 @@ app.post("logout",async(request,response)=>{
 
 
 
-const challenges = require('./challenges.json');
+/*const challenges = require('./challenges.json');
 const { INTEGER } = require("sequelize");
+*/
 /*
 app.post("/api/get-challenges", async(request,response)=>{
     try {
