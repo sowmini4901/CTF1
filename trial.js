@@ -39,6 +39,11 @@ const UserSchema = new Mongoose.Schema({
 
 const UserModel = new Mongoose.model("user", UserSchema);
 
+app.get('/', function(request, response) {
+    return response.sendFile(__dirname + '/welcome.html');
+});
+
+
 /*app.post("/api/register", async (request, response) => {
     
     try {
@@ -161,10 +166,7 @@ app.post("/leaderboard", async(request,response)=>{
       })
       .limit(10).sort({ score: -1 });
   });
-  app.get('/', (req, res) => {
-    
-    return res.sendFile(__dirname + '/index.html');
-})
+  
 
 const port = process.env.PORT || 3000;
 
